@@ -1,7 +1,7 @@
 MBtiles downloader
 ===================
 
-MBtiles downloader is a small Java programm to create [MBtiles](http://wiki.openstreetmap.org/wiki/MBTiles) files from a GIS server. Is main purpose is to create offline maps for my [CarPi](https://github.com/dan-osterrath/CarPi) project. It is derived from https://github.com/jawg/mbtiles-generator.
+MBtiles downloader is a small Java programm to create [MBtiles](http://wiki.openstreetmap.org/wiki/MBTiles) files from a GIS server. Its main purpose is to create offline maps for my [CarPi](https://github.com/dan-osterrath/CarPi) project and is derived from https://github.com/jawg/mbtiles-generator.
 
 You can download from OpenStreetMaps like servers or from Bing Maps.
 > **Warning:** *If you download from OpenStreetMaps or Bing maps directly, you need a valid license. Usually you don't have such a license so **don't do such evil things**! Use your own tiles server and download from your own server.*
@@ -28,7 +28,7 @@ userAgent="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/
 There exists 2 mappers:
   * *net.packsam.mbtilesdownloader.mapper.OSMTilesMapper* - Tiles mapper for OpenStreetMap like servers. 
   * *net.packsam.mbtilesdownloader.mapper.BingTilesMapper* - Tiles mapper for Bing maps like servers.
-* *threads* - number of parallel threads to use when downloading
+* *threads* - Number of parallel threads to use when downloading.
 * *userAgent* - User agent string to use when downloading.
 
 #### Tags for OSMTilesMapper
@@ -58,13 +58,9 @@ $> java -jar target/mbtiles_downloader.jar -b <bounds> -z <zoom-level> -o <optio
 ```
 
 #### Parameters
-* *-b* / *--bounds* - the boundaries for the rectangle to download
-These coordinates are in latitude, longitude in the following format: *[western longitude],[southern latitude],[eastern longitude],[northern latitude]*
-Hint: You can get your desired boundaries rectangle from http://boundingbox.klokantech.com/. Specify CSV as output format.
-* *-z* / *--zoom* - the zoom levels to download
-You have to specify the min and max zoom level in he following format: *[min zoom]-[max-zoom]*
+* *-b* / *--bounds* - The boundaries for the rectangle to download. These coordinates are in latitude, longitude in the following format: *[western longitude],[southern latitude],[eastern longitude],[northern latitude]* Hint: You can get your desired boundaries rectangle from http://boundingbox.klokantech.com/. Specify CSV as output format.
+* *-z* / *--zoom* - The zoom levels to download. You have to specify the min and max zoom level in he following format: *[min zoom]-[max-zoom]*
 * *-o* / *--options* - the options file to use
-* *-f* / *--file* - the target MBtile file to write
-If the target MBtiles file already exists all downloaded tiles will be added to this file. If tiles already exist they won't be downloaded and overwritten again. So you can easily continue a previous download progress or add additional boundaries later. 
+* *-f* / *--file* - The target MBtile file to write. If the target MBtiles file already exists all downloaded tiles will be added to this file. If tiles already exist they won't be downloaded and overwritten again. So you can easily continue a previous download progress or add additional boundaries later. 
 
 To download an MBTiles file with the zoom levels 4 to 12 for the Suisse i.e. you would specify *-b 5.9559,45.818,10.4921,47.8084 -z 4-12 -o myoptions.properties -f suisse.mbtiles*
