@@ -1,1 +1,9 @@
-"target" 
+target/
+.DS_Store
+
+/.classpath
+/.project
+/.tern-project
+/.settings 
+
+/*.mbtiles
