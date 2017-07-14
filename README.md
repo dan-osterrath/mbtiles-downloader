@@ -65,5 +65,6 @@ Hint: You can get your desired boundaries rectangle from http://boundingbox.klok
 You have to specify the min and max zoom level in he following format: *[min zoom]-[max-zoom]*
 * *-o* / *--options* - the options file to use
 * *-f* / *--file* - the target MBtile file to write
+If the target MBtiles file already exists all downloaded tiles will be added to this file. If tiles already exist they won't be downloaded and overwritten again. So you can easily continue a previous download progress or add additional boundaries later. 
 
 To download an MBTiles file with the zoom levels 4 to 12 for the Suisse i.e. you would specify *-b 5.9559,45.818,10.4921,47.8084 -z 4-12 -o myoptions.properties -f suisse.mbtiles*
