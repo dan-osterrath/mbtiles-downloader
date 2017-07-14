@@ -26,8 +26,8 @@ userAgent="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/
 * *url* - The URL pattern for the tiles to download. The pattern can contain several tags (*{...}*) that will be replaced when downloading a tile. The tags are dependent on the tiles mapper.
 * *mapper* - The tiles mapper that creates a correct URL for a tile. It replaces mapper specific tags in the url pattern to identify a tile.
 There exists 2 mappers:
- * *net.packsam.mbtilesdownloader.mapper.OSMTilesMapper* - Tiles mapper for OpenStreetMap like servers. 
- * *net.packsam.mbtilesdownloader.mapper.BingTilesMapper* - Tiles mapper for Bing maps like servers.
+  * *net.packsam.mbtilesdownloader.mapper.OSMTilesMapper* - Tiles mapper for OpenStreetMap like servers. 
+  * *net.packsam.mbtilesdownloader.mapper.BingTilesMapper* - Tiles mapper for Bing maps like servers.
 * *threads* - number of parallel threads to use when downloading
 * *userAgent* - User agent string to use when downloading.
 
