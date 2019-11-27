@@ -190,6 +190,8 @@ public class Main {
 				.build() //
 		);
 		options.addOption(Option.builder("o") //
+				.hasArgs() //
+				.numberOfArgs(1) //
 				.argName("optionsfile") //
 				.longOpt("options") //
 				.desc("options file") //
