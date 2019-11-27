@@ -87,6 +87,7 @@
 						<configuration>
 							<finalName>mbtiles-downloader</finalName>
 							<appendAssemblyId>false</appendAssemblyId>
+							<attach>false</attach>
 							<descriptorRefs>
 								<descriptorRef>jar-with-dependencies</descriptorRef>
 							</descriptorRefs>
